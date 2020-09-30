@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E370DDE2524E8AB00FFE8EF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370DDD2524E8AB00FFE8EF /* HTTPMethod.swift */; };
+		8E370DE22524E8E600FFE8EF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370DE12524E8E600FFE8EF /* API.swift */; };
+		8E370DE52524E93C00FFE8EF /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370DE42524E93C00FFE8EF /* Routable.swift */; };
+		8E370DEA2524EA9F00FFE8EF /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370DE92524EA9F00FFE8EF /* Resource.swift */; };
+		8E370DEE2524EBD400FFE8EF /* Resource+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370DED2524EBD400FFE8EF /* Resource+SwiftUI.swift */; };
+		8E370DF12524ECE000FFE8EF /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370DF02524ECE000FFE8EF /* Networkable.swift */; };
+		8E370DF62524EE2400FFE8EF /* RandomUserNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370DF52524EE2400FFE8EF /* RandomUserNetwork.swift */; };
+		8E370DF92524EE9500FFE8EF /* RandomUserRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370DF82524EE9500FFE8EF /* RandomUserRoute.swift */; };
+		8E370DFE2524EFD700FFE8EF /* NetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370DFD2524EFD700FFE8EF /* NetworkViewModel.swift */; };
 		8EC9CB6D2524E58900F9F68A /* RandomUserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9CB6C2524E58900F9F68A /* RandomUserApp.swift */; };
 		8EC9CB6F2524E58900F9F68A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9CB6E2524E58900F9F68A /* ContentView.swift */; };
 		8EC9CB712524E58B00F9F68A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC9CB702524E58B00F9F68A /* Assets.xcassets */; };
@@ -14,6 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E370DDD2524E8AB00FFE8EF /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		8E370DE12524E8E600FFE8EF /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		8E370DE42524E93C00FFE8EF /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		8E370DE92524EA9F00FFE8EF /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		8E370DED2524EBD400FFE8EF /* Resource+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+SwiftUI.swift"; sourceTree = "<group>"; };
+		8E370DF02524ECE000FFE8EF /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		8E370DF52524EE2400FFE8EF /* RandomUserNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserNetwork.swift; sourceTree = "<group>"; };
+		8E370DF82524EE9500FFE8EF /* RandomUserRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserRoute.swift; sourceTree = "<group>"; };
+		8E370DFD2524EFD700FFE8EF /* NetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewModel.swift; sourceTree = "<group>"; };
 		8EC9CB692524E58900F9F68A /* Random User.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Random User.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC9CB6C2524E58900F9F68A /* RandomUserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserApp.swift; sourceTree = "<group>"; };
 		8EC9CB6E2524E58900F9F68A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +51,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E370DDC2524E89400FFE8EF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8E370DF82524EE9500FFE8EF /* RandomUserRoute.swift */,
+				8E370DF52524EE2400FFE8EF /* RandomUserNetwork.swift */,
+				8E370DE82524EA7400FFE8EF /* Core */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8E370DE82524EA7400FFE8EF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8E370DF02524ECE000FFE8EF /* Networkable.swift */,
+				8E370DE12524E8E600FFE8EF /* API.swift */,
+				8E370DDD2524E8AB00FFE8EF /* HTTPMethod.swift */,
+				8E370DE42524E93C00FFE8EF /* Routable.swift */,
+				8E370DE92524EA9F00FFE8EF /* Resource.swift */,
+				8E370DED2524EBD400FFE8EF /* Resource+SwiftUI.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8E370DFC2524EFBA00FFE8EF /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E370DFD2524EFD700FFE8EF /* NetworkViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		8EC9CB602524E58900F9F68A = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +103,8 @@
 			children = (
 				8EC9CB6C2524E58900F9F68A /* RandomUserApp.swift */,
 				8EC9CB6E2524E58900F9F68A /* ContentView.swift */,
+				8E370DFC2524EFBA00FFE8EF /* View Models */,
+				8E370DDC2524E89400FFE8EF /* Networking */,
 				8EC9CB702524E58B00F9F68A /* Assets.xcassets */,
 				8EC9CB752524E58B00F9F68A /* Info.plist */,
 				8EC9CB722524E58B00F9F68A /* Preview Content */,
@@ -138,8 +189,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E370DEE2524EBD400FFE8EF /* Resource+SwiftUI.swift in Sources */,
 				8EC9CB6F2524E58900F9F68A /* ContentView.swift in Sources */,
+				8E370DFE2524EFD700FFE8EF /* NetworkViewModel.swift in Sources */,
 				8EC9CB6D2524E58900F9F68A /* RandomUserApp.swift in Sources */,
+				8E370DF12524ECE000FFE8EF /* Networkable.swift in Sources */,
+				8E370DE22524E8E600FFE8EF /* API.swift in Sources */,
+				8E370DF92524EE9500FFE8EF /* RandomUserRoute.swift in Sources */,
+				8E370DEA2524EA9F00FFE8EF /* Resource.swift in Sources */,
+				8E370DF62524EE2400FFE8EF /* RandomUserNetwork.swift in Sources */,
+				8E370DE52524E93C00FFE8EF /* Routable.swift in Sources */,
+				8E370DDE2524E8AB00FFE8EF /* HTTPMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
