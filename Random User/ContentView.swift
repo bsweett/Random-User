@@ -9,9 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
 
+    @EnvironmentObject var viewModel: UsersViewModel
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            viewModel.resource.isLoading {
+                Group  {
+                    Spacer()
+                    ProgressView()
+                    Spacer()
+                }
+            }
+
+            viewModel.resource.hasError() { error in
+                Group {
+                    Spacer()
+                    Label(error.localizedDescription, systemImage: "exclamationmark.triangle")
+                    Spacer()
+                }
+            }
+
+            viewModel.resource.hasResource() { users in
+            }
+        }.onAppear(perform: {
+            viewModel.onAppear()
+        })
     }
 }
 
