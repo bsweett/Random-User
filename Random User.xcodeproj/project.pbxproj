@@ -16,6 +16,12 @@
 		8E370DF62524EE2400FFE8EF /* RandomUserNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370DF52524EE2400FFE8EF /* RandomUserNetwork.swift */; };
 		8E370DF92524EE9500FFE8EF /* RandomUserRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370DF82524EE9500FFE8EF /* RandomUserRoute.swift */; };
 		8E370DFE2524EFD700FFE8EF /* NetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370DFD2524EFD700FFE8EF /* NetworkViewModel.swift */; };
+		8E6557F8252533C80022ACE3 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6557F7252533C80022ACE3 /* UsersViewModel.swift */; };
+		8E6557FC252533F70022ACE3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6557FB252533F70022ACE3 /* User.swift */; };
+		8E6558002525340D0022ACE3 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6557FF2525340D0022ACE3 /* Users.swift */; };
+		8E6558042525341C0022ACE3 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6558032525341C0022ACE3 /* Name.swift */; };
+		8E655807252534400022ACE3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E655806252534400022ACE3 /* Location.swift */; };
+		8E65580A252534690022ACE3 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E655809252534690022ACE3 /* Picture.swift */; };
 		8EC9CB6D2524E58900F9F68A /* RandomUserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9CB6C2524E58900F9F68A /* RandomUserApp.swift */; };
 		8EC9CB6F2524E58900F9F68A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9CB6E2524E58900F9F68A /* ContentView.swift */; };
 		8EC9CB712524E58B00F9F68A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC9CB702524E58B00F9F68A /* Assets.xcassets */; };
@@ -32,6 +38,12 @@
 		8E370DF52524EE2400FFE8EF /* RandomUserNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserNetwork.swift; sourceTree = "<group>"; };
 		8E370DF82524EE9500FFE8EF /* RandomUserRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserRoute.swift; sourceTree = "<group>"; };
 		8E370DFD2524EFD700FFE8EF /* NetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewModel.swift; sourceTree = "<group>"; };
+		8E6557F7252533C80022ACE3 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		8E6557FB252533F70022ACE3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8E6557FF2525340D0022ACE3 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		8E6558032525341C0022ACE3 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		8E655806252534400022ACE3 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8E655809252534690022ACE3 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		8EC9CB692524E58900F9F68A /* Random User.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Random User.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC9CB6C2524E58900F9F68A /* RandomUserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserApp.swift; sourceTree = "<group>"; };
 		8EC9CB6E2524E58900F9F68A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,9 +89,22 @@
 		8E370DFC2524EFBA00FFE8EF /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				8E6557F7252533C80022ACE3 /* UsersViewModel.swift */,
 				8E370DFD2524EFD700FFE8EF /* NetworkViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		8E6557FA252533DD0022ACE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E6557FF2525340D0022ACE3 /* Users.swift */,
+				8E6557FB252533F70022ACE3 /* User.swift */,
+				8E6558032525341C0022ACE3 /* Name.swift */,
+				8E655806252534400022ACE3 /* Location.swift */,
+				8E655809252534690022ACE3 /* Picture.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8EC9CB602524E58900F9F68A = {
@@ -103,6 +128,7 @@
 			children = (
 				8EC9CB6C2524E58900F9F68A /* RandomUserApp.swift */,
 				8EC9CB6E2524E58900F9F68A /* ContentView.swift */,
+				8E6557FA252533DD0022ACE3 /* Models */,
 				8E370DFC2524EFBA00FFE8EF /* View Models */,
 				8E370DDC2524E89400FFE8EF /* Networking */,
 				8EC9CB702524E58B00F9F68A /* Assets.xcassets */,
@@ -189,16 +215,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E6557FC252533F70022ACE3 /* User.swift in Sources */,
 				8E370DEE2524EBD400FFE8EF /* Resource+SwiftUI.swift in Sources */,
+				8E655807252534400022ACE3 /* Location.swift in Sources */,
+				8E6557F8252533C80022ACE3 /* UsersViewModel.swift in Sources */,
 				8EC9CB6F2524E58900F9F68A /* ContentView.swift in Sources */,
 				8E370DFE2524EFD700FFE8EF /* NetworkViewModel.swift in Sources */,
 				8EC9CB6D2524E58900F9F68A /* RandomUserApp.swift in Sources */,
+				8E6558002525340D0022ACE3 /* Users.swift in Sources */,
 				8E370DF12524ECE000FFE8EF /* Networkable.swift in Sources */,
 				8E370DE22524E8E600FFE8EF /* API.swift in Sources */,
+				8E6558042525341C0022ACE3 /* Name.swift in Sources */,
 				8E370DF92524EE9500FFE8EF /* RandomUserRoute.swift in Sources */,
 				8E370DEA2524EA9F00FFE8EF /* Resource.swift in Sources */,
 				8E370DF62524EE2400FFE8EF /* RandomUserNetwork.swift in Sources */,
 				8E370DE52524E93C00FFE8EF /* Routable.swift in Sources */,
+				8E65580A252534690022ACE3 /* Picture.swift in Sources */,
 				8E370DDE2524E8AB00FFE8EF /* HTTPMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,7 +18,7 @@ protocol NetworkViewModel: ObservableObject {
     var route: Routable { get }
     var set: Set<AnyCancellable> { get set }
 
-    func onAppear()
+    func onAppear(session: URLSession, scheduler: RunLoop)
 
 }
 
