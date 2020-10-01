@@ -13,4 +13,9 @@ struct Picture: Decodable {
     let medium: String?
     let large: String?
 
+    var url: URL? {
+        guard let string = medium else { return nil }
+        return URL(string: string)
+    }
+
 }

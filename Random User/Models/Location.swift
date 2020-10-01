@@ -9,9 +9,13 @@ import Foundation
 
 struct Location: Decodable {
 
-    let street: String?
+    let street: Street
     let city: String?
     let state: String?
-    let postcode: String?
+
+    struct Street: Decodable {
+        let number: Int
+        let name: String?
+    }
 
 }

@@ -14,7 +14,7 @@ class UsersViewModel: NetworkViewModel, ObservableObject {
 
     var resource: Resource<Users> = .loading
     var network: Networkable
-    var route: Routable = RandomUserRoute.api(results: 200)
+    var route: Routable = RandomUserRoute.api(results: 100)
     var set: Set<AnyCancellable> = Set<AnyCancellable>()
 
     init(with network: Networkable) {

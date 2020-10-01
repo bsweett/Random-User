@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct RandomUserApp: App {
+
+    let network = RandomUserNetwork()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewModel = UsersViewModel(with: network)
+            ContentView().environmentObject(viewModel)
         }
     }
 }
