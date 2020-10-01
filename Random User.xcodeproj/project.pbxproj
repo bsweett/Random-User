@@ -82,12 +82,12 @@
 		8E12D5B22526407900785EF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8EC9CB6E2524E58900F9F68A /* ContentView.swift */,
-				8E12D5AE25263F0900785EF1 /* UserListView.swift */,
-				8E12D5B42526415300785EF1 /* UserDetail.swift */,
-				8E65580D25253C910022ACE3 /* UserRow.swift */,
 				8E12D5AA2526324600785EF1 /* ErrorView.swift */,
-				8E52E7162526600A00F76DBF /* ImageView.swift */,
+				8E65580D25253C910022ACE3 /* UserRow.swift */,
+				8E12D5AE25263F0900785EF1 /* UserListView.swift */,
+				8EC9CB6E2524E58900F9F68A /* ContentView.swift */,
+				8E12D5B42526415300785EF1 /* UserDetail.swift */,
+				8E52E71B25268EFA00F76DBF /* Core */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,6 +123,14 @@
 				8E370DFD2524EFD700FFE8EF /* NetworkViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		8E52E71B25268EFA00F76DBF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8E52E7162526600A00F76DBF /* ImageView.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		8E6557FA252533DD0022ACE3 /* Models */ = {
