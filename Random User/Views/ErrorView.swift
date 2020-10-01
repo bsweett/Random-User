@@ -11,16 +11,15 @@ struct ErrorView: View {
     var text: String
 
     var body: some View {
-        HStack {
-            Spacer()
-            Label(text, systemImage: "exclamationmark.triangle")
-            Spacer()
-        }
+        EmptyView()
     }
 }
 
 struct ErrorViewPreviews: PreviewProvider {
     static var previews: some View {
         ErrorView(text: "Some super long error message that may take up more space.")
+            .previewLayout(
+                .fixed(width: 400, height: 150)
+            )
     }
 }
