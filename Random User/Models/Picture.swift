@@ -13,14 +13,4 @@ struct Picture: Decodable {
     let medium: String?
     let large: String?
 
-    var thumbURL: URL? {
-        guard let string = medium else { return nil }
-        return URL(string: string)
-    }
-
-    var profileURL: URL? {
-        guard let string = large else { return nil }
-        return URL(string: string)
-    }
-
 }

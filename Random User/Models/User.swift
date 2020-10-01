@@ -19,4 +19,22 @@ struct User: Decodable, Identifiable {
     let cell: String?
     let picture: Picture?
 
+    var fullName: String {
+        return name.full
+    }
+
+    var phoneNumber: String {
+        return cell ?? phone ?? ""
+    }
+
+    var thumbURL: URL? {
+        guard let string = picture?.medium else { return nil }
+        return URL(string: string)
+    }
+
+    var profileURL: URL? {
+        guard let string = picture?.large else { return nil }
+        return URL(string: string)
+    }
+
 }

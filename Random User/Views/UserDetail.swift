@@ -12,7 +12,7 @@ struct UserDetail: View {
 
     var body: some View {
         VStack {
-            ImageView(url: user.picture?.profileURL)
+            ImageView(url: user.profileURL)
             .frame(width: 150, height: 150)
             .cornerRadius(75)
             VStack(alignment: .leading) {

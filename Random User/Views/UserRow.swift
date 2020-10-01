@@ -11,19 +11,7 @@ struct UserRow: View {
     var user: User
 
     var body: some View {
-        HStack {
-            ImageView(url: user.picture?.thumbURL)
-            .frame(width: 68, height: 68)
-            .cornerRadius(25)
-            .padding(4)
-            VStack(alignment: .leading) {
-                Text(user.name.full)
-                    .font(.body)
-                Text(user.cell ?? "")
-                    .font(.callout)
-            }
-            Spacer()
-        }
+        EmptyView()
     }
 
 }
