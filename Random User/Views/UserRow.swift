@@ -12,11 +12,7 @@ struct UserRow: View {
 
     var body: some View {
         HStack {
-            AsyncImage(
-                url: user.picture?.url,
-                placeholder: { Image(systemName: "person.circle") },
-                image: { Image(uiImage: $0).resizable() }
-            )
+            ImageView(url: user.picture?.thumbURL)
             .frame(width: 68, height: 68)
             .cornerRadius(25)
             .padding(4)

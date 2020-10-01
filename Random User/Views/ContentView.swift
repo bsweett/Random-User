@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
 
     @EnvironmentObject var viewModel: UsersViewModel
-    //@State private var showingChildView = false
 
     var body: some View {
         NavigationView {
@@ -24,7 +23,9 @@ struct ContentView: View {
                 }
 
                 viewModel.resource.hasError() { error in
-                    ErrorView(text: "\(error)")
+                    ErrorView(text: "\(error)").onTapGesture(count: 1, perform: {
+                        viewModel.onAppear()
+                    })
                 }
 
                 viewModel.resource.hasResource() { users in

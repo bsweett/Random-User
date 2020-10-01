@@ -12,14 +12,7 @@ struct UserDetail: View {
 
     var body: some View {
         VStack {
-            AsyncImage(
-                url: user.picture?.url,
-                placeholder: { Image(systemName: "person.circle")
-                    .resizable()
-                    .frame(width: 36, height: 36)
-                },
-                image: { Image(uiImage: $0).resizable() }
-            )
+            ImageView(url: user.picture?.profileURL)
             .frame(width: 150, height: 150)
             .cornerRadius(75)
             VStack(alignment: .leading) {
