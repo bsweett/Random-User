@@ -12,30 +12,7 @@ struct ContentView: View {
     @EnvironmentObject var viewModel: UsersViewModel
 
     var body: some View {
-        NavigationView {
-            VStack {
-                viewModel.resource.isLoading {
-                    Group {
-                        Spacer()
-                        ProgressView("Loading...")
-                        Spacer()
-                    }
-                }
-
-                viewModel.resource.hasError() { error in
-                    ErrorView(text: "\(error)").onTapGesture(count: 1, perform: {
-                        viewModel.onAppear()
-                    })
-                }
-
-                viewModel.resource.hasResource() { users in
-                    UserListView(users: users.results)
-                }
-            }
-            .navigationBarTitle(Text("Users"))
-        }.onAppear(perform: {
-            viewModel.onAppear()
-        })
+        EmptyView()
     }
 }
 
