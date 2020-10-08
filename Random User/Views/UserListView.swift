@@ -11,7 +11,12 @@ struct UserListView: View {
     let users: [User]
 
     var body: some View {
-        EmptyView()
+        List(users) { user in
+            NavigationLink(destination: UserDetail(user: user)) {
+                UserRow(user: user)
+            }
+        }
+        .listStyle(InsetGroupedListStyle())
     }
 }
 

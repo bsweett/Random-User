@@ -11,7 +11,24 @@ struct UserDetail: View {
     let user: User
 
     var body: some View {
-        EmptyView()
+        VStack {
+            ImageView(url: user.profileURL)
+                .frame(width: 150, height: 150)
+                .cornerRadius(75)
+            VStack(alignment: .leading) {
+                Text(user.name.full)
+                    .font(.title)
+                HStack(alignment: .top) {
+                    Text(user.location.city ?? "")
+                        .font(.subheadline)
+                    Spacer()
+                    Text(user.gender ?? "")
+                        .font(.subheadline)
+                }
+            }
+            .padding()
+            Spacer()
+        }
     }
 }
 

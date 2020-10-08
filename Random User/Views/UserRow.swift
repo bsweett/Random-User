@@ -11,7 +11,20 @@ struct UserRow: View {
     var user: User
 
     var body: some View {
-        EmptyView()
+        HStack {
+            ImageView(url: user.thumbURL)
+                .frame(width: 68, height: 68)
+                .cornerRadius(25)
+                .padding(4)
+            VStack(alignment: .leading) {
+                Text(user.fullName)
+                    .font(.body)
+                Text(user.phoneNumber)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+            }
+            Spacer()
+        }
     }
 
 }
